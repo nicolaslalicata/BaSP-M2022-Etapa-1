@@ -41,8 +41,6 @@ li.redes {
 }
 
 
-/* Header */
-
 header {
   position: fixed;
   background-color: #373867;
@@ -266,7 +264,6 @@ aside a {
 
 div.lineaverde {
   border-top: 5px solid #AACE9B;
-  ;
   height: 2px;
   width: 74px;
   padding: 0;
