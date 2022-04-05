@@ -22,7 +22,8 @@ Then for spaces between texts use margins and padding:
 ![imgexample](Semana-03/Assets/marginpadding.png)
 
 I made a sidebar with a fixed position and that goes through the whole page.
-This sidebar contains elements with hyperlinks:
+This sidebar contains elements with hyperlinks:  
+
 ![imgexample](Semana-03/Assets/sidebar.png)
 
 And finally made a footer with the company's social networks
