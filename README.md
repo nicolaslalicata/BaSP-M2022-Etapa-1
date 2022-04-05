@@ -1,4 +1,4 @@
-![Logo](Semana-01/Assets/logohdr.jpg)
+![Logo](Semana-02/Assets/logohdr.jpg)
 # Become a Software Professional by RADIUM ROCKET!
 The problem presented this week was to layout the HTML landing page of Trackgenix application. In order to do so, we were asked to build the corresponding sections and parent elements.
 ---
@@ -13,4 +13,4 @@ I found this markdown language very fun and super intuitive since we can make th
  Author:
  Nicolás Lalicata 
  ```
-![Logo](Semana-01/Assets/logohdr.jpg)
+![Logo](Semana-02/Assets/logohdr.jpg)
