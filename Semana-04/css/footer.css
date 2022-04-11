@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    background-color: #D9D9E2;
+    height: 90px;
+    align-items: center;
+    flex-direction: row;
+
+  }
+
+ .iconfooter {
+     display:flex;
+     padding-left: 291px;
+ }
+
+ .redes {
+     margin-left: 10px;
+
+     
+ }
+
+ 
+
+ .track {
+     margin-right: 600px;
+ }
+
+ .filapro {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
