@@ -1,153 +1,84 @@
 aside {
-    background-color: #D9D9E2;
-    margin-top: 96px;
-    max-width: 400px;
-    flex: 2;
+  background-color: #d9d9e2;
+  margin-top: 6em;
+  max-width: 25em;
+  flex: 2;
 }
-
-.sidebar {
-    background-color: white;
-    margin-left: 20px;
-    display:none;
-}
-
-.funcionalitiez {
-    border-bottom: 1px solid rgba(55, 56, 103, 0.5);
-    border-radius: 2px;
-}
-
-
-
 section.informacion {
-         padding-top: 35px;
-        padding-top: 35px;
-        border-bottom: 1px solid rgba(55, 56, 103, 0.5);
-        padding-bottom: 50px;
-    
+  padding-top: 2.1875em;
+  border-bottom: 1px solid rgba(55, 56, 103, 0.5);
+  padding-bottom: 3.125em;
 }
-
-
 .menu {
-    display: flex;
-    flex-direction: column;
-    padding-left: 36px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.25em;
 }
-
 .menu1 {
-    display: flex;
-    flex: 2;
-    flex-direction: column;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
 }
-
 .contact {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    flex: 8;
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: column;
+  flex: 8;
 }
-
 .stylesmenu {
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 35px;
-border-bottom: 5px solid #AACE9B;
-    width: 81px;
-color: #373867;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 2.1875em;
+  border-bottom: 5px solid #aace9b;
+  width: 5.0625em;
+  color: #373867;
 }
-
 .contact .stylesmenu {
-    border-bottom: 5px solid #AACE9B;
-    width: 155px;
+  border-bottom: 5px solid #aace9b;
+  width: 9.6875em;
 }
-
 .contact .aside-style {
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-margin-bottom: 30px;
-padding-top: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75em;
+  line-height: 1.125em;
+  margin-bottom: 1.875em;
+  padding-top: 0.625em;
 }
-
 .contacto {
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-
-color: #373867;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 1em;
+  color: #373867;
 }
-
 .contacto {
-   
-    line-height: 40px;
-    margin-left: 40px;
+  line-height: 2.5em;
+  margin-left: 2.5em;
 }
-
-
 .menu {
-    padding-top: 40px;
+  padding-top: 2.5em;
 }
-
-@media only screen and (max-width: 780px) {
-    aside {
-      display: none;
-    }
-
-    .solution {
-        
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 33.750em;
-        
-    }
-
-    .watch {
-        display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 33.750em;
-    }
-
-
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  width: 13.5em;
 }
-
-@media only screen and (max-width: 480px) {
-    p, ul, h2, h3, h1 {
-        font-size: 0.5em !important;
-    }
+.contacts:nth-child(2) {
+  width: 9.5em;
 }
-
-
-.padre  {
-    display: flex;
-    justify-content: space-between;
-    align-content: stretch;
-    align-items: baseline;
-    flex-direction: row-reverse;
-    width: 184px;
+.contacts:nth-child(3) {
+  width: 17.75em;
+  line-height: 1.25em;
 }
-
-.padre:nth-child(2) {
-    width: 126px;
-
-}
-
-.padre:nth-child(3) {
-    width: 220px;
-    line-height: 20px;
-
-}
-
 .bordermenu {
-
-    border-bottom: 1px solid rgba(55, 56, 103, 0.5);
-    width: 200px;
-
-}    
-
+  border-bottom: 1px solid rgba(55, 56, 103, 0.5);
+  width: 12.5em;
+}

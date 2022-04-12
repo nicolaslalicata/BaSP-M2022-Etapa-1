@@ -1,22 +1,33 @@
 header {
-    position: fixed;
-    width: 100%;
-    height: 6em;
-    background-color: #373867;
-  }
- 
-  span.radium {
-    
-    font-size: 4.5em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #49A37B;
-    margin-left: 0.5em;
-  }
-  span.rocket {
-    margin-left: -0.1em;
-    font-size: 3.72em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: #AACE9B;
-  }
+  position: fixed;
+  width: 100%;
+  height: 6em;
+  background-color: #373867;
+}
+span.radium {
+  font-size: 4.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #49a37b;
+  margin-left: 0.5em;
+}
+span.rocket {
+  margin-left: -0.1em;
+  font-size: 3.72em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #aace9b;
+}
+.test4 {
+  color: white;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #373867;
+}
+a:visited {
+  color: #373867;
+  text-decoration: none;
+}
