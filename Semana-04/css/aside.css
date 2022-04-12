@@ -98,9 +98,31 @@ color: #373867;
       display: none;
     }
 
+    .solution {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33.750em;
+        
+    }
+
+    .watch {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33.750em;
+    }
 
 
 }
+
+@media only screen and (max-width: 480px) {
+    p, ul, h2, h3, h1 {
+        font-size: 0.5em !important;
+    }
+}
+
 
 .padre  {
     display: flex;

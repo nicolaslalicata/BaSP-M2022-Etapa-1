@@ -9,13 +9,11 @@ body {
     
 }
 
-.project {
-    display: flex;
-}
+
 
 .container-general {
     display: flex;
-    width: 900px;
+    width: 100%;
     justify-content: space-between;
    
     
@@ -26,13 +24,13 @@ body {
     flex-direction: column;
     padding-bottom: 80px;
     justify-content: space-evenly;
-    padding-top: 62px;
+    padding-top: 43px;
    
 }
 
 .watch {
     
-    width: 460px;
+    width: 50%;
     height: 390px;
     padding-top: 60px;
 }
@@ -71,8 +69,8 @@ main {
 
 
 .rocketlaunch {
-    width: 369px;
-    height: 369px;
+   
+    height: 390px;
 }
 
 .about-us {
@@ -97,24 +95,21 @@ p.project {
 }
 
 
- html,body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-  }
+ 
 
 
   .form {
     display: flex;
     justify-content: space-between;
-    width: 900px;
-    padding: 45px 0 45px 0;
+    width: 100%;
+   
 }
 
 .form-control {
-    width: 437px;
+    width: 50%;
     height: 37px;
     border: 1px solid #373867;
-box-sizing: border-box;
+    margin: 10px;
 border-radius: 4px;
 }
 
@@ -134,7 +129,7 @@ border-radius: 4px;
 }
 
 .input-textarea {
-    width: 920px;
+    width: 100%;
     height: 196px;
     margin-bottom: 20px;
     font-family: 'Roboto';
@@ -143,7 +138,7 @@ font-weight: 400;
 font-size: 13px;
 line-height: 15px;
 border: 1px solid #373867;
-box-sizing: border-box;
+
 border-radius: 4px;
 }
 
@@ -186,16 +181,17 @@ color: #373867;
 
 .card{
     display: flex;
-    flex: 2 0 250px;
+    flex: 2 0 309px;
     width: 100%;
     align-items: center;
+    padding-top: 22px;
 }
 
 
 .funciones {
     
     
-    width: 804px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -211,3 +207,5 @@ color: #373867;
     border-radius: 2px;
     padding-bottom: 100px;
 }
+
+

@@ -1,18 +1,21 @@
 footer {
     display: flex;
-    justify-content: space-between;
-    width: 1440px;
+    
+    width: 100%;
     background-color: #D9D9E2;
-    height: 90px;
+    height: 6em;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 
   }
 
+
+
  .iconfooter {
-     display:flex;
-     padding-left: 291px;
- }
+    display: flex;
+    padding-top: 20px;
+}
+ 
 
  .redes {
      margin-left: 10px;
@@ -20,14 +23,10 @@ footer {
      
  }
 
- 
-
- .track {
-     margin-right: 600px;
- }
-
  .filapro {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
  }
+
+ 
