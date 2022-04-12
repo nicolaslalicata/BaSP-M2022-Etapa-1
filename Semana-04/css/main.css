@@ -117,12 +117,12 @@ label {
 }
 .card {
   display: flex;
-  flex: 2 0 360px;
+  flex: 2 0 382px;
   width: 100%;
   align-items: center;
   padding-top: 1.375em;
 }
-.funciones {
+.functions {
   width: 100%;
   display: flex;
   flex-direction: row;

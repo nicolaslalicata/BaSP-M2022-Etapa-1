@@ -86,4 +86,7 @@ body {
     margin-top: 6em;
     padding: 0.625em;
   }
+  h1 {
+    text-align: center;
+  }
 }
