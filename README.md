@@ -28,9 +28,13 @@ This sidebar contains elements with hyperlinks:
 
 And finally made a footer with the company's social networks
 ![Logo](Semana-03/Assets/socialnet.png)
----
----
 
+---
+## **Week-04**
+The problem of week 04 proposed that we create a responsive web with the use of flexbox and mediaqueries
+---
+My solution was to **create containers** and **convert** them to flex blocks. With the correct properties the web becomes responsive without using too many mediaqueries
+![Responsive](Semana-04/Assets/readme04.png)
  ```
  Author:
  Nicolás Lalicata 

@@ -31,12 +31,9 @@ section.informacion {
   font-weight: 700;
   font-size: 1.875em;
   line-height: 2.1875em;
-  border-bottom: 5px solid #aace9b;
-  width: 5.0625em;
   color: #373867;
 }
 .contact .stylesmenu {
-  border-bottom: 5px solid #aace9b;
   width: 9.6875em;
 }
 .contact .aside-style {
@@ -81,4 +78,16 @@ section.informacion {
 .bordermenu {
   border-bottom: 1px solid rgba(55, 56, 103, 0.5);
   width: 12.5em;
+}
+.border {
+  border-bottom: 5px solid #aace9b;
+  margin-top: 1.25em;
+  width: 55%;
+  margin-top: -17px;
+}
+.border1 {
+  border-bottom: 5px solid #aace9b;
+  margin-top: 1.25em;
+  width: 28%;
+  margin-top: -17px;
 }
