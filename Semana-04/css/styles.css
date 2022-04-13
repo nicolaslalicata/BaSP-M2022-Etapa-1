@@ -49,6 +49,9 @@ body {
   aside {
     display: none;
   }
+  .borderline {
+    display: none;
+  }
   .solution {
     display: flex;
     flex-direction: column;
