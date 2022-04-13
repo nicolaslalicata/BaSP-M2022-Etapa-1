@@ -44,7 +44,7 @@ body {
 
 .borderline {
   border-bottom: 1px solid rgba(55, 56, 103, 0.5);
-  padding-top: 17px;
+  padding-top: 4.75em;
 }
 @media only screen and (max-width: 780px) {
   aside {
