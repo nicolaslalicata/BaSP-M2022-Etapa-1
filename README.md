@@ -36,7 +36,9 @@ The problem of week 04 proposed that we create a responsive web with the use of 
 My solution was to **create containers** and **convert** them to flex blocks. With the correct properties the web becomes responsive without using too many mediaqueries  
 
 ![Responsive](Semana-04/Assets/readme04.png)
- ```
+### **GitPage:**
+```
+ https://nicolaslalicata.github.io/BaSP-M2022-Etapa-1/Semana-04/index.html
  Author:
  Nicolás Lalicata 
  ```
