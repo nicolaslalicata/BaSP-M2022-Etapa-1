@@ -68,7 +68,7 @@ body {
     flex-direction: column;
   }
   .form-control {
-    width: 100%;
+    width: 95%;
   }
   .space-options {
     flex-direction: column;

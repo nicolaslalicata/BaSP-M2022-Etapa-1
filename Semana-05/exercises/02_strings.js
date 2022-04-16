@@ -24,7 +24,7 @@ var guardado2 = cadena3.substring(60 , 63);
 
 // Ex D
 
-var cadena3 = "hola que tal"
+var cadena3 = "Hola que tal"
 var mayuscula = cadena3.substring(0 , 1);
 var residuo =  cadena3.slice(1);
 var mayuscula = mayuscula.toUpperCase();
