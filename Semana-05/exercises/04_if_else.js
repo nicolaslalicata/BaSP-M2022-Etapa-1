@@ -1,4 +1,4 @@
-/*
+
 // IF ELSE!
 // Ex A
 
@@ -29,4 +29,4 @@ var age = 30;
     } else if (age > 75){
         alert("Anciano")
     }
-    */
+    

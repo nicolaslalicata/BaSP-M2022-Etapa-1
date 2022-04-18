@@ -1,5 +1,5 @@
 
-/*
+
 // STRINGS
 
 // Ex A
@@ -65,4 +65,3 @@ var final = segundamayus + residuos
 var tema1 = resultadofinal + final 
 
 console.log(tema1);
-*/

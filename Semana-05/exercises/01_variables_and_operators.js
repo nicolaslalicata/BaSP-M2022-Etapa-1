@@ -1,4 +1,4 @@
-/*
+
 //Variables and Operators
 //Ex A
 var num = 5
@@ -21,7 +21,7 @@ var conteojunto = conteo + conteo2;
 
 console.log(conteojunto.length);
 
-*/
+
 
 
 

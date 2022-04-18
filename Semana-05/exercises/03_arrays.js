@@ -1,4 +1,4 @@
-/*
+
 // ARRAYS
 // Ex A
 var mesesDelAnho = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
@@ -26,4 +26,3 @@ var mesesDelAnho1 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Jul
 var recorteMeses = mesesDelAnho1.slice(4,11);
 console.log(recorteMeses);
 
-*/
