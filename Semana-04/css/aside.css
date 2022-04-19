@@ -6,7 +6,8 @@ aside {
 }
 section.informacion {
   padding-top: 2.1875em;
-  border-bottom: 1px solid rgba(55, 56, 103, 0.5);
+  border-bottom: 1px solid #373867;
+  opacity: 0.5;
   padding-bottom: 3.125em;
 }
 .menu {
@@ -76,7 +77,8 @@ section.informacion {
   line-height: 1.25em;
 }
 .bordermenu {
-  border-bottom: 1px solid rgba(55, 56, 103, 0.5);
+  border-bottom: 1px solid #373867;
+  opacity: 0.5;
   width: 12.5em;
 }
 .border {

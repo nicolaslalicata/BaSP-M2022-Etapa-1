@@ -130,7 +130,8 @@ label {
   padding-bottom: 3.875em;
 }
 .whyuse {
-  border-bottom: 1px solid rgba(55, 56, 103, 0.5);
+  border-bottom: 1px solid #373867;
+  opacity: 0.5;
   border-radius: 0.125em;
   padding-bottom: 6.25em;
 }

@@ -22,6 +22,14 @@ h3 {
   color: #373867;
   padding: 1em;
 }
+h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 1em;
+  color: #373867;
+}
 h2 {
   font-family: "Roboto";
   font-style: normal;
@@ -42,7 +50,8 @@ body {
   z-index: 1;
 }
 .borderline {
-  border-bottom: 1px solid rgba(55, 56, 103, 0.5);
+  border-bottom: 1px solid #373867;
+  opacity: 0.5;
   padding-top: 4.75em;
 }
 @media only screen and (max-width: 780px) {
@@ -97,4 +106,31 @@ body {
   h1 {
     text-align: center;
   }
+}
+
+@media only screen and (max-width: 480px){
+  .sendreset {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding-left: 2.875em;
+
+}
+.reset-button {
+  margin-left: 0em;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filapro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 }

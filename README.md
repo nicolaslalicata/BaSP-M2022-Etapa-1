@@ -36,6 +36,24 @@ The problem of week 04 proposed that we create a responsive web with the use of 
 My solution was to **create containers** and **convert** them to flex blocks. With the correct properties the web becomes responsive without using too many mediaqueries  
 
 ![Responsive](Semana-04/Assets/readme04.png)
+
+---
+## **Week-05**
+This week the problem posed consisted of solving practical javascript exercises.
+In my case, **I created 5 files** with a **.js extension** that contained the exercises solved and in order.
+<ul>
+  <li><em>01_variables_and_operators.js</li>
+  <li>02_strings.js</li>
+  <li>03_arrays.js</li>
+  <li>04_if_else.js</li>
+  <li>05_for.js</li>
+  <li>06_functions.js
+
+  </ul>
+
+
+
+
 ### **GitPage:**
 ```
  https://nicolaslalicata.github.io/BaSP-M2022-Etapa-1/Semana-04/index.html
