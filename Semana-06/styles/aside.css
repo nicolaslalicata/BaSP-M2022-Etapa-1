@@ -1,0 +1,94 @@
+aside {
+  background-color: #d9d9e2;
+  margin-top: 6em;
+  max-width: 25em;
+  flex: 2;
+}
+section.informacion {
+  padding-top: 2.1875em;
+  border-bottom: 1px solid #373867;
+  padding-bottom: 3.125em;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.25em;
+}
+.menu1 {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+.contact {
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: column;
+  flex: 8;
+}
+.stylesmenu {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 2.1875em;
+  color: #373867;
+}
+.contact .stylesmenu {
+  width: 9.6875em;
+}
+.contact .aside-style {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75em;
+  line-height: 1.125em;
+  margin-bottom: 1.875em;
+  padding-top: 0.625em;
+}
+.contacto {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 1em;
+  color: #373867;
+}
+.contacto {
+  line-height: 2.5em;
+  margin-left: 2.5em;
+}
+.menu {
+  padding-top: 2.5em;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  width: 13.5em;
+}
+.contacts:nth-child(2) {
+  width: 9.5em;
+}
+.contacts:nth-child(3) {
+  width: 17.75em;
+  line-height: 1.25em;
+}
+.bordermenu {
+  border-bottom: 1px solid #373867;
+  opacity: 0.5;
+  width: 12.5em;
+}
+.border {
+  border-bottom: 5px solid #aace9b;
+  margin-top: 1.25em;
+  width: 55%;
+  margin-top: -17px;
+}
+.border1 {
+  border-bottom: 5px solid #aace9b;
+  margin-top: 1.25em;
+  width: 28%;
+  margin-top: -17px;
+}

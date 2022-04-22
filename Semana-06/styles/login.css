@@ -1,0 +1,125 @@
+main {
+  margin-left: 2.5em;
+  font-family: 'Roboto', sans-serif;
+  } 
+  .container {
+    position: relative;
+    max-width: 26.875em;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1)
+}
+.container .forms {
+    padding: 1.875em; 
+}
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.fotertest {
+  width: 100%;
+  margin-top: 3.25em;
+  margin-left: 7.5em;
+}
+.container .forms {
+  padding: 1.875em; 
+}
+.form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 1.875em;
+}
+.input-field input {
+  height: 100%;
+  width: 100%;
+  padding: 0 2.1875em;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.input-field i{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 23px;
+  color: #999;
+  font-size: 23px;
+}
+form {
+  position: relative;
+  right: 6.3125em;
+}
+.input-field input:is(:focus, :valid) {
+  border-bottom-color:#640d8d
+}
+.input-field input:is(:focus, :valid) ~ i {
+  color: #640d8d
+}
+.form .checkbox-text {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  width: 100%;
+}
+.checkbox-text .checkbox-content {
+  display: flex;
+  align-items: center;
+}
+.checkbox-content input {
+  margin: 0 8px -2px 4px;
+  accent-color: #373867;
+}
+.checkbox-text a {
+  position: relative;
+  left: 20px;
+}
+.button {
+  left: 50px;
+}
+.form .button {
+  margin-top: 10px;
+}
+.form .button input {
+  border: none;
+    color: #49a37b;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;;
+    background-color: #373867;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.button input:hover {
+  background-color: #6B30E3;
+}
+.form .button input:hover {
+  color: white;
+}
+.form .login-signup {
+  margin-top: 12px;
+  text-align: center;;
+}
+.checkbox-text a {
+  font-size: 12px;
+}
+.checkbox-text a:hover {
+  color: red;
+  text-decoration: underline;
+}
+.container {
+  margin-left: 125px;
+  margin-top: 40px;
+}
+.title {
+  color: #373867;
+}
