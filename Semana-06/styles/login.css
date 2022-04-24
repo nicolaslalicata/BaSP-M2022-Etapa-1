@@ -2,14 +2,7 @@ main {
   margin-left: 2.5em;
   font-family: 'Roboto', sans-serif;
   } 
-  .container {
-    position: relative;
-    max-width: 26.875em;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1)
-}
+  
 .container .forms {
     padding: 1.875em; 
 }
@@ -18,11 +11,7 @@ main {
     font-size: 27px;
     font-weight: 600;
 }
-.fotertest {
-  width: 100%;
-  margin-top: 3.25em;
-  margin-left: 7.5em;
-}
+
 .container .forms {
   padding: 1.875em; 
 }
@@ -56,6 +45,7 @@ main {
 form {
   position: relative;
   right: 6.3125em;
+  
 }
 .input-field input:is(:focus, :valid) {
   border-bottom-color:#640d8d
@@ -121,5 +111,23 @@ form {
   margin-top: 40px;
 }
 .title {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
   color: #373867;
+  right: 40px;
+}
+
+.forms {
+  margin-left: 210px;
+  margin-top: 50px;
+  
+}
+
+.border1 {
+  width: 20%;
+}
+
+.border {
+  width: 40%;
 }
