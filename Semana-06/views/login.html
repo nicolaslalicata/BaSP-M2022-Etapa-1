@@ -68,32 +68,32 @@
         </div>
       </aside>
       <main>
-          <div class ="forms">
-              <div class="form login">
-                  <span class="title">Login</span>
-                  <form action="#"">
-                      <div class="input-field">
-                          <input type="text" id="email2" placeholder="Enter your email" required>
-                      <i class="uil uil-envelope icon"></i>
-                      <p class="formulario__email-error">Formato de e-mail no valido</p>
-                      </div>
-                      <div class="input-field">
-                          <input type="password" id="contrasenha3" placeholder="Enter your password" required>
-                          <i class="uil uil-lock icon"></i>
-                          <p class="formulario__password-error">Contraseña Incorrecta</p>
-                      </div>
-                      <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck">
-                            <label for="logCheck" class="text">Remember me</label>
-                        </div>
-                        <a href="#" class="text">Forgot password?</a>
-                    </div>
-                    <div class="input-field button">
-                      <input type="button" value="Login Now">
-                  </form>
-          </div>
-      </div>
+          <form action="" class="login" id="login">
+            <div class="formulario__grupo" id="grupo__meil">
+              <label for="meil" class="formulario__label">E-mail</label>
+              <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="meil" id="meil" placeholder="mail@mail.com">
+                <i class="formulario__validacion-estado uil uil-times-circle"></i>
+              </div>
+              <p class="formulario__input-error">Debe tener un formato de email válido.</p>
+            </div>
+  
+            <!-- Grupo: Nombre-->
+            <div class="formulario__grupo" id="grupo__pass3">
+              <label for="pass3" class="formulario__label">Password</label>
+              <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="pass3" id="password">
+                <i class="formulario__validacion-estado uil uil-times-circle"></i>
+              </div>
+              <p class="formulario__input-error">Letras numeros y +8 caracteres
+              </p>
+            </div>
+            <div class="formulario__grupo" class="formulario__grupo-btn-enviar">
+              <button type="submit" class="formulario__btn"> Send</button>
+              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente</p>
+            </div>
+          </form>
+      
     </main>
   </div>
         <footer>

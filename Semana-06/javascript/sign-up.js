@@ -18,15 +18,13 @@ var pass2 = document.getElementById('password2')
 user.addEventListener('focus', function(e){
   document
         .getElementById("grupo__usuario")
-        .classList.remove("formulario__grupo-incorrecto");
-        
+        .classList.remove("formulario__grupo-incorrecto");    
 })
 
 names.addEventListener('focus', function(e){
   document
         .getElementById("grupo__nombre")
-        .classList.remove("formulario__grupo-incorrecto");
-        
+        .classList.remove("formulario__grupo-incorrecto");     
 })
 
 date.addEventListener('focus', function(e){
