@@ -56,7 +56,7 @@ form {
 .form .checkbox-text {
   display: flex;
   justify-content: space-around;
-  padding: 15px;
+  padding: 21px;
   width: 100%;
 }
 .checkbox-text .checkbox-content {
@@ -130,4 +130,18 @@ form {
 
 .border {
   width: 40%;
+}
+
+
+.formulario__email-error {
+  font-size: 12px;
+  color: red;
+  display:none;
+}
+
+.formulario__password-error {
+  font-size: 12px;
+  color: red;
+  display: none;
+ 
 }

@@ -1,241 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Trackgenix is a new app for human resources"
-    />
-    <meta name="keywords" content="Human Resources, Bussines" />
-    <meta name="author" content="Nicolás Lalicata" />
-    <link rel="stylesheet" href="../styles/reset.css" media="screen" />
-    <link rel="stylesheet" href="../styles/header.css" media="screen" />
-    <link rel="stylesheet" href="../styles/landing.css" media="screen" />
-    <link rel="stylesheet" href="../styles/footer.css" media="screen" />
-    <link rel="stylesheet" href="../styles/styles.css" media="screen" />
-    <link rel="stylesheet" href="../styles/aside.css" media="screen" />
-    <link rel="stylesheet" href="../styles/sign-up.css" media="screen" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Trackgenix</title>
-  </head>
-  <body>
-    <header>
-      <img class="test4" src="../assets/Union.png" alt="asdasd" />
-      <span class="radium"> Radium</span>
-      <span class="rocket"> Rocket</span>
-    </header>
-    <div class="container-principal">
-      <aside>
-        <div class="menu">
-          <span class="stylesmenu"> Menu </span>
-          <div class="border1"></div>
-          <div class="menu1">
-            <ul class="contacto">
-              <li class="bordermenu"><a href="index.html">Home</a></li>
-              <li class="bordermenu"><a href="signup.html">Sign Up</a></li>
-              <li class="bordermenu"><a href="login.html">Login</a></li>
-            </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trackgenix is a new app for human resources" />
+  <meta name="keywords" content="Human Resources, Bussines" />
+  <meta name="author" content="Nicolás Lalicata" />
+  <link rel="stylesheet" href="../styles/reset.css" media="screen" />
+  <link rel="stylesheet" href="../styles/header.css" media="screen" />
+  <link rel="stylesheet" href="../styles/landing.css" media="screen" />
+  <link rel="stylesheet" href="../styles/footer.css" media="screen" />
+  <link rel="stylesheet" href="../styles/styles.css" media="screen" />
+  <link rel="stylesheet" href="../styles/aside.css" media="screen" />
+  <link rel="stylesheet" href="../styles/sign-up.css" media="screen" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <title>Trackgenix</title>
+</head>
+
+<body>
+  <header>
+    <img class="test4" src="../assets/Union.png" alt="asdasd" />
+    <span class="radium"> Radium</span>
+    <span class="rocket"> Rocket</span>
+  </header>
+  <div class="container-principal">
+    <aside>
+      <div class="menu">
+        <span class="stylesmenu"> Menu </span>
+        <div class="border1"></div>
+        <div class="menu1">
+          <ul class="contacto">
+            <li class="bordermenu"><a href="../views/index.html">Home</a></li>
+            <li class="bordermenu"><a href="../views/signup.html">Sign Up</a></li>
+            <li class="bordermenu"><a href="../views/login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <span class="stylesmenu"> Contact Us </span>
+          <div class="border"></div>
+          <p class="aside-style">
+            We provide 24-hour support, you can contact us through the
+            different official channels that we handle.
+          </p>
+          <ul class="contacto">
+            <div class="contacts">
+              <li><a href="#">radiumrocket@gmail.com</a></li>
+              <img src="../assets/mail.png" alt="mail" class="e-mail" />
+            </div>
+            <div class="contacts">
+              <li><a href="#">+1 555-000-555</a></li>
+              <img src="../assets/mail.png" alt="phone" class="mail" />
+            </div>
+            <div class="contacts">
+              <li>
+                <a href="#">1234 Somewhere Road #8254 Nashville, TN 00000-0000
+                </a>
+              </li>
+              <img src="../assets/direction.png" alt="home" class="direction" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <form action="" class="formulario" id="formulario">
+        <!-- Grupo: Usuario-->
+        <div class="flex">
+          <div class="formulario__grupo" id="grupo__usuario">
+            <label for="usuario" class="formulario__label">Name</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input " name="usuario" id="usuario" placeholder="Name">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Solo letras y debe tener más de 3 letras.</p>
           </div>
-          <div class="contact">
-            <span class="stylesmenu"> Contact Us </span>
-            <div class="border"></div>
-            <p class="aside-style">
-              We provide 24-hour support, you can contact us through the
-              different official channels that we handle.
+
+          <!-- Grupo: Nombre-->
+          <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Surname</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Surname">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Solo letras y debe tener más de 3 letras.</p>
+          </div>
+
+          <!-- Grupo: Email-->
+          <div class="formulario__grupo" id="grupo__nacimiento">
+            <label for="nacimiento" class="formulario__label">Birthdate</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="nacimiento" id="nacimiento" placeholder="DD/MM/AAAA">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Con formato dd/mm/aaaa.
             </p>
-            <ul class="contacto">
-              <div class="contacts">
-                <li><a href="#">radiumrocket@gmail.com</a></li>
-                <img src="../assets/mail.png" alt="mail" class="e-mail" />
-              </div>
-              <div class="contacts">
-                <li><a href="#">+1 555-000-555</a></li>
-                <img src="../assets/mail.png" alt="phone" class="mail" />
-              </div>
-              <div class="contacts">
-                <li>
-                  <a href="#"
-                    >1234 Somewhere Road #8254 Nashville, TN 00000-0000
-                  </a>
-                </li>
-                <img src="../assets/direction.png" alt="home" class="direction" />
-              </div>
-            </ul>
+          </div>
+
+          <!-- Grupo: email-->
+          <div class="formulario__grupo" id="grupo__email">
+            <label for="email" class="formulario__label">E-mail</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="email" id="email" placeholder="mail@mail.com">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Debe tener un formato de email válido.</p>
+          </div>
+
+          <!-- Grupo: direccion-->
+          <div class="formulario__grupo" id="grupo__direccion">
+            <label for="direccion" class="formulario__label">Addres</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Street Addres">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Debe tener un formato de direccion válido.</p>
+          </div>
+
+          <!-- Grupo: Localidad-->
+
+          <div class="formulario__grupo" id="grupo__localidad">
+            <label for="localidad" class="formulario__label">Location</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="localidad" id="localidad" placeholder="Location">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Más de 3 letras
+            </p>
+          </div>
+
+          <!-- Grupo: CP-->
+          <div class="formulario__grupo" id="grupo__codigo-postal">
+            <label for="codigo-postal" class="formulario__label">Postal Code</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="codigo-postal" id="codigo-postal"
+                placeholder="Enter your zip code">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">debe tener entre 4 y 5 números.</p>
+          </div>
+
+
+
+
+          <!-- Grupo: DNI-->
+          <div class="formulario__grupo" id="grupo__dni">
+            <label for="dni" class="formulario__label">ID</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="dni" id="dni" placeholder="2435699881">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Solo número y debe tener más de 7 números.</p>
+          </div>
+
+          <!-- Grupo: Telefono-->
+          <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Phone</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="(555) 6522145">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Solo número y debe tener 10 números</p>
+          </div>
+          <!-- Grupo contraseña-->
+          <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Password</label>
+            <div class="formulario__grupo-input">
+              <input type="password" class="formulario__input" name="password" id="password">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Letras numeros y +8 caracteres
+            </p>
+          </div>
+
+          <!-- Grupo: Contraseña2-->
+
+          <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label">Repeat Password</label>
+            <div class="formulario__grupo-input">
+              <input type="password" class="formulario__input" name="password2" id="password2">
+              <i class="formulario__validacion-estado uil uil-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Las contraseñas no coinciden</p>
           </div>
         </div>
-      </aside>
-    
-      <main>
-        <form action="" class="formulario" id="formulario">
-          <!-- Grupo: Usuario-->
-          <div class="flex">
-      <div class="formulario__grupo" id="grupo__usuario">
-          <label for="usuario" class="formulario__label">Name</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Name">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El usuario tiene que contener más de 3 letras</p>
-      </div>
-      
-      <!-- Grupo: Nombre-->
-      <div class="formulario__grupo" id="grupo__nombre">
-          <label for="nombre" class="formulario__label">Surname</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Surname">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El nombre tiene que contener más de 3 letras</p>
-      </div>
-      
-      <!-- Grupo: Email-->
-      <div class="formulario__grupo" id="grupo__nacimiento">
-          <label for="nacimiento" class="formulario__label">Fecha de nacimiento</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="nacimiento" id="nacimiento" placeholder="">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El email tiene que contener más de 3 letras</p>
-      </div>
-      
-      <!-- Grupo: email-->
-      <div class="formulario__grupo" id="grupo__email">
-          <label for="email" class="formulario__label">e-mail</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="email" id="email" placeholder="Correo@correo.com">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El email tiene que contener más de 3 letras</p>
-      </div>
-      
-      <!-- Grupo: direccion-->
-      <div class="formulario__grupo" id="grupo__direccion">
-          <label for="direccion" class="formulario__label">Direccion</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="2435699881">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El email tiene que contener más de 3 letras</p>
-      </div>
-      
-      <!-- Grupo: Localidad-->
-      
-      <div class="formulario__grupo" id="grupo__localidad">
-          <label for="localidad" class="formulario__label">Localty</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="localidad" id="localidad" placeholder="2435699881">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El email tiene que contener más de 3 letras</p>
-      </div>
-      
-      <!-- Grupo: CP-->
-      <div class="formulario__grupo" id="grupo__codigo-postal">
-          <label for="codigo-postal" class="formulario__label">CP</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="codigo-postal" id="codigo-postal" placeholder="2435699881">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El email tiene que contener más de 3 letras</p>
-      </div>
-    
-    
-
-    
-      <!-- Grupo: DNI-->
-      <div class="formulario__grupo" id="grupo__dni">
-          <label for="dni" class="formulario__label">DNI</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="dni" id="dni" placeholder="2435699881">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El email tiene que contener más de 3 letras</p>
-      </div>
-      
-      <!-- Grupo: Telefono-->
-      <div class="formulario__grupo" id="grupo__telefono">
-          <label for="telefono" class="formulario__label">Telefono</label>
-      <div class="formulario__grupo-input">
-          <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="2435699881">
-          <i class="formulario__validacion-estado uil uil-times-circle"></i>
-      </div>
-      <p class="formulario__input-error">El email tiene que contener más de 3 letras</p>
-      </div>
-<!-- Grupo contraseña-->
-      <div class="formulario__grupo" id="grupo__password">
-        <label for="password" class="formulario__label">Contraseña</label>
-    <div class="formulario__grupo-input">
-        <input type="password" class="formulario__input" name="password" id="password" >
-        <i class="formulario__validacion-estado uil uil-times-circle"></i>
-    </div>
-    <p class="formulario__input-error">La contraseña debe contener etc etc etc</p>
-    </div>
-    
-    <!-- Grupo: Contraseña2-->
-    
-    <div class="formulario__grupo" id="grupo__password2">
-        <label for="password2" class="formulario__label">Repetir contraseña</label>
-    <div class="formulario__grupo-input">
-        <input type="password" class="formulario__input" name="password2" id="password2" >
-        <i class="formulario__validacion-estado uil uil-times-circle"></i>
-    </div>
-    <p class="formulario__input-error">Las contraseñas no coinciden</p>
-    </div>
-    </div>
-      <!-- validacion y terminos-->
-      <div class="formulario__grupo" id="grupo__terminos">
+        <!-- validacion y terminos-->
+        <div class="formulario__grupo" id="grupo__terminos">
           <label class="formulario__label">
-              <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-              Acepto los terminos y condiciones
+            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+            I accept the terms and conditions
+
           </label>
-      </div>
-      <div class="formulario__mensaje" id="formulario__mensaje">
+        </div>
+        <div class="formulario__mensaje" id="formulario__mensaje">
           <p><i class="uil uil-exclamation-octagon"></i><b>Error: </b>por favor rellenar correctamente el formulario</p>
-          
-      </div>
-      
-      <div class="formulario__grupo" class="formulario__grupo-btn-enviar">
+
+        </div>
+
+        <div class="formulario__grupo" class="formulario__grupo-btn-enviar">
           <button type="submit" class="formulario__btn"> Enviar</button>
           <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente</p>
-      </div>
-      
+        </div>
+
       </form>
     </main>
   </div>
   </div>
-        <footer>
-          <div>
-            <ul class="iconfooter">
-              <li class="redes">
-                <a href="#"
-                  ><img src="../assets/facebook.png" alt="logo-fb"
-                /></a>
-              </li>
-              <li class="redes">
-                <a href="#"
-                  ><img src="../assets/linkedin.png" alt="logo-tw"
-                /></a>
-              </li>
-              <li class="redes">
-                <a href="#"
-                  ><img src="../assets/twitter.png" alt="logo-in"
-                /></a>
-              </li>
-              <li class="redes">
-                <a href="#"
-                  ><img src="../assets/whatsapp.png" alt="logo-wsp"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <div class="track"><em>Trackgenix</em></div>
-        </footer>
-        
-    </body>
-  </body>
-  <script src="../javascript/sign-up.js"></script>
- 
+  <footer>
+    <div>
+      <ul class="iconfooter">
+        <li class="redes">
+          <a href="#"><img src="../assets/facebook.png" alt="logo-fb" /></a>
+        </li>
+        <li class="redes">
+          <a href="#"><img src="../assets/linkedin.png" alt="logo-tw" /></a>
+        </li>
+        <li class="redes">
+          <a href="#"><img src="../assets/twitter.png" alt="logo-in" /></a>
+        </li>
+        <li class="redes">
+          <a href="#"><img src="../assets/whatsapp.png" alt="logo-wsp" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="track"><em>Trackgenix</em></div>
+  </footer>
+
+</body>
+</body>
+<script src="../javascript/sign-up.js"></script>
+
 </html>

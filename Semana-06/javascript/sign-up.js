@@ -1,223 +1,707 @@
 var formulario = document.getElementById('formulario');
 var inputs = document.querySelectorAll('#formulario input');
-
-const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^.{4,12}$/, // 4 a 12 digitos.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
-}
-
-
-
-var validarFormulario = function(e){
-switch (e.target.name) {
-    case "usuario":
-        if(expresiones.usuario.test(e.target.value)){
-            document.getElementById('grupo__usuario').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__usuario').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__usuario i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__usuario i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__usuario .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__usuario').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__usuario').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__usuario i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__usuario i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__usuario .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    
-       
-    break;
-    case "nombre":
-        if(expresiones.nombre.test(e.target.value)){
-            document.getElementById('grupo__nombre').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__nombre').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__nombre i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__nombre i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__nombre .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__nombre').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__nombre').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__nombre i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__nombre i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__nombre .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "nacimiento":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__nacimiento').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__nacimiento').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__nacimiento i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__nacimiento i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__nacimiento .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__nacimiento').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__nacimiento').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__nacimiento i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__nacimiento i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__nacimiento .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "direccion":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__direccion').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__direccion').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__direccion i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__direccion i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__direccion .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__direccion').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__direccion').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__direccion i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__direccion i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__direccion .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "telefono":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__telefono').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__telefono').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__telefono i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__telefono i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__telefono .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__telefono').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__telefono').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__telefono i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__telefono i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__telefono .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "email":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__email').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__email').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__email i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__email i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__email .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__email').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__email').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__email i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__email i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__email .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "localidad":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__localidad').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__localidad').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__localidad i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__localidad i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__localidad .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__localidad').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__localidad').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__localidad i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__localidad i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__localidad .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "codigo-postal":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__codigo-postal').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__codigo-postal').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__codigo-postal i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__codigo-postal i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__codigo-postal .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__codigo-postal').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__codigo-postal').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__codigo-postal i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__codigo-postal i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__codigo-postal .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "dni":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__dni').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__dni').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__dni i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__dni i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__dni .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__dni').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__dni').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__dni i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__dni i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__dni .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "password":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__password').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__password').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__password i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__password i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__password .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__password').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__password').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__password i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__password i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__password .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-    case "password2":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('grupo__password2').classList.remove('formulario__grupo-incorrecto')
-            document.getElementById('grupo__password2').classList.add('formulario__grupo-correcto')
-            document.querySelector('#grupo__password2 i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__password2 i').classList.add('uil-check-circle')
-            document.querySelector('#grupo__password2 .formulario__input-error').classList.remove('formulario__input-error-activo')
-    
-    
-        } else {
-            document.getElementById('grupo__password2').classList.add('formulario__grupo-incorrecto')
-            document.getElementById('grupo__password2').classList.remove('formulario__grupo-correcto')
-            document.querySelector('#grupo__password2 i').classList.remove('uil-check-circle')
-            document.querySelector('#grupo__password2 i').classList.add('uil-times-circle')
-            document.querySelector('#grupo__password2 .formulario__input-error').classList.add('formulario__input-error-activo')
-        }
-    break;
-}
-};
+var user = document.getElementById('usuario')
+var names = document.getElementById('nombre')
+var date = document.getElementById('nacimiento')
+var mail = document.getElementById('email')
+var addres = document.getElementById('direccion')
+var localty = document.getElementById('localidad')
+var cp = document.getElementById('codigo-postal')
+var phone= document.getElementById('telefono')
+var docu = document.getElementById('dni')
+var pass = document.getElementById('password')
+var pass2 = document.getElementById('password2')
 
 
-inputs.forEach(function (input){
-    input.addEventListener('keyup', validarFormulario);
-    input.addEventListener('blur', validarFormulario);
+
+
+user.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__usuario")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+names.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__nombre")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+date.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__nacimiento")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+mail.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__email")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+addres.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__direccion")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+localty.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__localidad")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+cp.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__codigo-postal")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+phone.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__telefono")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+docu.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__dni")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+pass.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__password")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+pass2.addEventListener('focus', function(e){
+  document
+        .getElementById("grupo__password2")
+        .classList.remove("formulario__grupo-incorrecto");
+        
+})
+
+
+
+
+
+
+user.addEventListener("blur",  function (e) {
+  if (user.value.length > 3) {
+    var prueba = user.value;
+    var validateName = false;
+    for (let i = 0; i < prueba.length; i++) {
+      var letra = prueba.substring(i, i + 1);
+      if (letra == Number(letra)) {
+        validateName = true;
+      }
+    }
+    console.log(validateName);
+    if (validateName) {
+      document
+        .getElementById("grupo__usuario")
+        .classList.add("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__usuario")
+        .classList.remove("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__usuario i")
+        .classList.remove("uil-check-circle");
+      document
+        .querySelector("#grupo__usuario i")
+        .classList.add("uil-times-circle");
+      document
+        .querySelector("#grupo__usuario .formulario__input-error")
+        .classList.add("formulario__input-error-activo");
+    } else {
+      document
+        .getElementById("grupo__usuario")
+        .classList.remove("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__usuario")
+        .classList.add("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__usuario i")
+        .classList.remove("uil-check-circle");
+      document
+        .querySelector("#grupo__usuario i")
+        .classList.add("uil-check-circle");
+      document
+        .querySelector("#grupo__usuario .formulario__input-error")
+        .classList.remove("formulario__input-error-activo");
+    }
+  } else {
+    user.classList.remove('error')
+    document
+      .getElementById("grupo__usuario")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__usuario")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__usuario i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__usuario i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__usuario .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
 });
 
-formulario.addEventListener('submit', function (e){
-    e.preventDefault();
+names.addEventListener("blur", function (e) {
+  if (names.value.length > 3) {
+    var prueba = names.value;
+    var validateName = false;
+    for (let i = 0; i < prueba.length; i++) {
+      var letra = prueba.substring(i, i + 1);
+      if (letra == Number(letra)) {
+        validateName = true;
+      }
+    }
+    console.log(validateName);
+    if (validateName) {
+      document
+        .getElementById("grupo__nombre")
+        .classList.add("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__nombre")
+        .classList.remove("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__nombre i")
+        .classList.remove("uil-check-circle");
+      document
+        .querySelector("#grupo__nombre i")
+        .classList.add("uil-times-circle");
+      document
+        .querySelector("#grupo__nombre .formulario__input-error")
+        .classList.add("formulario__input-error-activo");
+    } else {
+      document
+        .getElementById("grupo__nombre")
+        .classList.remove("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__nombre")
+        .classList.add("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__nombre i")
+        .classList.remove("uil-check-circle");
+      document
+        .querySelector("#grupo__nombre i")
+        .classList.add("uil-check-circle");
+      document
+        .querySelector("#grupo__nombre .formulario__input-error")
+        .classList.remove("formulario__input-error-activo");
+    }
+  } else {
+    document
+      .getElementById("grupo__nombre")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__nombre")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__nombre i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__nombre i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__nombre .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
+});
+
+date.addEventListener("blur", function (e) {
+  var dateValue = date.value;
+  var day = dateValue.substring(0, 2);
+  var slash1 = dateValue.substring(2, 3);
+  var month = dateValue.substring(3, 5);
+  var slash2 = dateValue.substring(5, 6);
+  var year = dateValue.substring(6, 10);
+
+  if (day > 31 || day < 1) {
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__nacimiento .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  } else if (month > 12 || month < 1) {
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__nacimiento .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  } else if (slash1 != "/" || slash2 != "/") {
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__nacimiento .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  } else if (year < 1990 || year > 2030) {
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__nacimiento .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  } else {
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.remove("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__nacimiento")
+      .classList.add("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__nacimiento i")
+      .classList.add("uil-check-circle");
+    document
+      .querySelector("#grupo__nacimiento .formulario__input-error")
+      .classList.remove("formulario__input-error-activo");
+  }
+});
+
+mail.addEventListener("blur", function (e) {
+  e.preventDefault();
+  let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (regexEmail.test(mail.value)) {
+    document
+      .getElementById("grupo__email")
+      .classList.remove("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__email")
+      .classList.add("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__email i")
+      .classList.remove("uil-check-circle");
+    document.querySelector("#grupo__email i").classList.add("uil-check-circle");
+    document
+      .querySelector("#grupo__email .formulario__input-error")
+      .classList.remove("formulario__input-error-activo");
+  } else {
+    document
+      .getElementById("grupo__email")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__email")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__email i")
+      .classList.remove("uil-check-circle");
+    document.querySelector("#grupo__email i").classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__email .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
+});
+
+docu.addEventListener("blur", function (e) {
+  if (docu.value.length > 7) {
+    var verificateDocu = docu.value;
+    var validateDocu = false;
+    for (let i = 0; i < verificateDocu.length; i++) {
+      var letra = verificateDocu.substring(i, i + 1);
+      if (letra == Number(letra)) {
+        validateDocu = true;
+      }
+    }
+    console.log(validateDocu);
+    if (validateDocu) {
+      document
+        .getElementById("grupo__dni")
+        .classList.remove("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__dni")
+        .classList.add("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__dni i")
+        .classList.remove("uil-check-circle");
+      document.querySelector("#grupo__dni i").classList.add("uil-check-circle");
+      document
+        .querySelector("#grupo__dni .formulario__input-error")
+        .classList.remove("formulario__input-error-activo");
+    } else {
+      document
+        .getElementById("grupo__dni")
+        .classList.add("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__dni")
+        .classList.remove("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__dni i")
+        .classList.remove("uil-check-circle");
+      document.querySelector("#grupo__dni i").classList.add("uil-times-circle");
+      document
+        .querySelector("#grupo__dni .formulario__input-error")
+        .classList.add("formulario__input-error-activo");
+    }
+  } else {
+    document
+      .getElementById("grupo__dni")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__dni")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__dni i")
+      .classList.remove("uil-check-circle");
+    document.querySelector("#grupo__dni i").classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__dni .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
+});
+
+cp.addEventListener("blur", function (e) {
+  if (cp.value.length > 0 && cp.value.length <= 5) {
+    var verificateCp = cp.value;
+    var validateCp = false;
+    for (let i = 0; i < verificateCp.length; i++) {
+      var letra = verificateCp.substring(i, i + 1);
+      if (letra == Number(letra)) {
+        validateCp = true;
+      }
+    }
+    console.log(validateCp);
+    if (validateCp) {
+      document
+        .getElementById("grupo__codigo-postal")
+        .classList.remove("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__codigo-postal")
+        .classList.add("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__codigo-postal i")
+        .classList.remove("uil-check-circle");
+      document
+        .querySelector("#grupo__codigo-postal i")
+        .classList.add("uil-check-circle");
+      document
+        .querySelector("#grupo__codigo-postal .formulario__input-error")
+        .classList.remove("formulario__input-error-activo");
+    } else {
+      document
+        .getElementById("grupo__codigo-postal")
+        .classList.add("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__codigo-postal")
+        .classList.remove("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__codigo-postal i")
+        .classList.remove("uil-check-circle");
+      document
+        .querySelector("#grupo__codigo-postal i")
+        .classList.add("uil-times-circle");
+      document
+        .querySelector("#grupo__codigo-postal .formulario__input-error")
+        .classList.add("formulario__input-error-activo");
+    }
+  } else {
+    document
+      .getElementById("grupo__codigo-postal")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__codigo-postal")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__codigo-postal i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__codigo-postal i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__codigo-postal .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
+});
+
+phone.addEventListener("blur", function (e) {
+  if (phone.value.length == 10) {
+    var verificatePhone = phone.value;
+    var validatePhone = false;
+    for (let i = 0; i < verificatePhone.length; i++) {
+      var letra = verificatePhone.substring(i, i + 1);
+      if (letra == Number(letra)) {
+        validatePhone = true;
+      }
+    }
+    console.log(validatePhone);
+    if (validatePhone) {
+      document
+        .getElementById("grupo__telefono")
+        .classList.remove("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__telefono")
+        .classList.add("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__telefono i")
+        .classList.remove("uil-check-circle");
+      document
+        .querySelector("#grupo__telefono i")
+        .classList.add("uil-check-circle");
+      document
+        .querySelector("#grupo__telefono .formulario__input-error")
+        .classList.remove("formulario__input-error-activo");
+    } else {
+      document
+        .getElementById("grupo__telefono")
+        .classList.add("formulario__grupo-incorrecto");
+      document
+        .getElementById("grupo__telefono")
+        .classList.remove("formulario__grupo-correcto");
+      document
+        .querySelector("#grupo__telefono i")
+        .classList.remove("uil-check-circle");
+      document
+        .querySelector("#grupo__telefono i")
+        .classList.add("uil-times-circle");
+      document
+        .querySelector("#grupo__telefono .formulario__input-error")
+        .classList.add("formulario__input-error-activo");
+    }
+  } else {
+    document
+      .getElementById("grupo__telefono")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__telefono")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__telefono i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__telefono i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__telefono .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
+});
+
+localty.addEventListener("blur", function (e) {
+  var validos = " abcdefghijklmnopqrstuvwxyz0123456789";
+  var letra;
+  var bien = true;
+  for (var i = 0; i < localty.value.length; i++) {
+    letra = localty.value.charAt(i).toLowerCase();
+    if (validos.indexOf(letra) == -1 || localty.value.length < 3) {
+      bien = false;
+    }
+    document
+      .getElementById("grupo__localidad")
+      .classList.remove("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__localidad")
+      .classList.add("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__localidad i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__localidad i")
+      .classList.add("uil-check-circle");
+    document
+      .querySelector("#grupo__localidad .formulario__input-error")
+      .classList.remove("formulario__input-error-activo");
+  }
+  if (!bien) {
+    document
+      .getElementById("grupo__localidad")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__localidad")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__localidad i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__localidad i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__localidad .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
+});
+
+addres.addEventListener("blur", function (e) {
+  var validos = " abcdefghijklmnopqrstuvwxyz0123456789";
+  var letra;
+  var bien = true;
+  for (var i = 0; i < addres.value.length; i++) {
+    letra = addres.value.charAt(i).toLowerCase();
+    if (validos.indexOf(letra) == -1 || addres.value.length < 5) {
+      bien = false;
+    }
+    document
+      .getElementById("grupo__direccion")
+      .classList.remove("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__direccion")
+      .classList.add("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__direccion i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__direccion i")
+      .classList.add("uil-check-circle");
+    document
+      .querySelector("#grupo__direccion .formulario__input-error")
+      .classList.remove("formulario__input-error-activo");
+  }
+  if (!bien) {
+    document
+      .getElementById("grupo__direccion")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__direccion")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__direccion i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__direccion i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__direccion .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
+});
+
+pass.addEventListener("blur", function (e) {
+  var validos =
+    " ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  var letra;
+  var bien = true;
+  for (var i = 0; i < pass.value.length; i++) {
+    letra = pass.value.charAt(i).toLowerCase();
+    if (validos.indexOf(letra) == -1 || pass.value.length < 5) {
+      bien = false;
+    }
+    document
+      .getElementById("grupo__password")
+      .classList.remove("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__password")
+      .classList.add("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__password i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__password i")
+      .classList.add("uil-check-circle");
+    document
+      .querySelector("#grupo__password .formulario__input-error")
+      .classList.remove("formulario__input-error-activo");
+  }
+  if (!bien) {
+    document
+      .getElementById("grupo__password")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__password")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__password i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__password i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__password .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
+});
+
+pass2.addEventListener("blur", function (e) {
+  if (pass2.value == pass.value) {
+    document
+      .getElementById("grupo__password2")
+      .classList.remove("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__password2")
+      .classList.add("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__password2 i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__password2 i")
+      .classList.add("uil-check-circle");
+    document
+      .querySelector("#grupo__password2 .formulario__input-error")
+      .classList.remove("formulario__input-error-activo");
+  } else {
+    document
+      .getElementById("grupo__password2")
+      .classList.add("formulario__grupo-incorrecto");
+    document
+      .getElementById("grupo__password2")
+      .classList.remove("formulario__grupo-correcto");
+    document
+      .querySelector("#grupo__password2 i")
+      .classList.remove("uil-check-circle");
+    document
+      .querySelector("#grupo__password2 i")
+      .classList.add("uil-times-circle");
+    document
+      .querySelector("#grupo__password2 .formulario__input-error")
+      .classList.add("formulario__input-error-activo");
+  }
 });
 
 
-/*inputs.forEach(function (input){
-    input.addEventListener('keyup', function(){
-        console.log("solto la tecla")
-    });
-});*/
+
+
+    

@@ -34,9 +34,9 @@
           <div class="border1"></div>
           <div class="menu1">
             <ul class="contacto">
-              <li class="bordermenu"><a href="index.html">Home</a></li>
-              <li class="bordermenu"><a href="signup.html">Sign Up</a></li>
-              <li class="bordermenu"><a href="login.html">Login</a></li>
+              <li class="bordermenu"><a href="../views/index.html">Home</a></li>
+              <li class="bordermenu"><a href="../views/signup.html">Sign Up</a></li>
+              <li class="bordermenu"><a href="../views/login.html">Login</a></li>
             </ul>
           </div>
           <div class="contact">
@@ -73,12 +73,14 @@
                   <span class="title">Login</span>
                   <form action="#"">
                       <div class="input-field">
-                          <input type="text" placeholder="Enter your email" required>
+                          <input type="text" id="email2" placeholder="Enter your email" required>
                       <i class="uil uil-envelope icon"></i>
+                      <p class="formulario__email-error">Formato de e-mail no valido</p>
                       </div>
                       <div class="input-field">
-                          <input type="password" placeholder="Enter your password" required>
+                          <input type="password" id="contrasenha3" placeholder="Enter your password" required>
                           <i class="uil uil-lock icon"></i>
+                          <p class="formulario__password-error">Contraseña Incorrecta</p>
                       </div>
                       <div class="checkbox-text">
                         <div class="checkbox-content">
@@ -124,4 +126,5 @@
         
     </body>
   </body>
+  <script src="../javascript/login.js"></script>
 </html>
