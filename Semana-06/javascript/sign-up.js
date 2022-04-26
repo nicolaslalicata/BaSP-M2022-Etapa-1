@@ -11,7 +11,18 @@ var phone= document.getElementById('telefono')
 var docu = document.getElementById('dni')
 var pass = document.getElementById('password')
 var pass2 = document.getElementById('password2')
-
+var btn2 = document.getElementById("butonSend");
+var validateUser = 0;
+var validateNames = 0;
+var validateDate = 0;
+var validateMail = 0 ;
+var validateAddres = 0;
+var validateLocalty = 0;
+var validateCp = 0;
+var validatePhone = 0;
+var validateDocu = 0;
+var validatePass = 0;
+var validatePass2 = 0;
 
 
 
@@ -93,8 +104,6 @@ pass2.addEventListener('focus', function(e){
 
 
 
-
-
 user.addEventListener("blur",  function (e) {
   if (user.value.length > 3) {
     var prueba = user.value;
@@ -140,7 +149,7 @@ user.addEventListener("blur",  function (e) {
         .classList.remove("formulario__input-error-activo");
     }
   } else {
-    user.classList.remove('error')
+  
     document
       .getElementById("grupo__usuario")
       .classList.add("formulario__grupo-incorrecto");
@@ -310,6 +319,7 @@ date.addEventListener("blur", function (e) {
     document
       .querySelector("#grupo__nacimiento .formulario__input-error")
       .classList.remove("formulario__input-error-activo");
+      
   }
 });
 
@@ -700,6 +710,19 @@ pass2.addEventListener("blur", function (e) {
 });
 
 
+btn2.addEventListener("click", clickButton);
 
+function clickButton(e) {
+  e.preventDefault();
+  if (validateEmail == 1 && validatePassword == 1) {
+    alert(
+      "Datos correctos " + "Email: " + mail2.value + " Password: " + pass3.value
+    );
+  } else if (!validateEmail) {
+    alert("Formato invaldo de email: example@mail.com " + ' Ingress: ' +  mail2.value);
+  } else {
+    alert("Contraseña incorrecta");
+  }
+}
 
     
