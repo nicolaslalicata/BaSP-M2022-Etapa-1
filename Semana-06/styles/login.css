@@ -5,12 +5,10 @@
   cursor: pointer;
   text-align: center;
 }
-
-.formulario__grupo-input{
+.formulario__grupo-input {
   position: relative;
 }
-
-.formulario__input{
+.formulario__input {
   width: 100%;
   background: rgba(163, 161, 165, 0.301);
   border: 3px solid transparent;
@@ -18,29 +16,23 @@
   height: 45px;
   line-height: 45px;
   padding: 0p 40px 0 10px;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
   font-size: 16px;
-  
-  
 }
-
 .formulario__input:focus {
   border: 1.5px solid #8f2965;
   outline: none;
-  box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
-
 .formulario__input-error {
   font-size: 12px;
   margin-bottom: 0;
   text-align: center;
   display: none;
 }
-
-.formulario__input-error-activo{
+.formulario__input-error-activo {
   display: block;
 }
-
 .formulario__validacion-estado {
   position: absolute;
   right: 10px;
@@ -49,17 +41,14 @@
   font-size: 16px;
   opacity: 0;
 }
-
 .formulario__checkbox {
   margin-right: 10px;
 }
-
 .formulario__grupo-terminos,
 .formulario__mensaje,
 .formulario__btn-enviar {
   grid-column: span 2;
 }
-
 .formulario__mensaje {
   height: 30px;
   font-size: 12px;
@@ -68,19 +57,15 @@
   padding: 0 15px 0 15px;
   border-radius: 3px;
   display: none;
-  
 }
-
 .formulario__mensaje-activo {
   display: block;
 }
-
 .formulario__mensaje p {
   margin: 0;
   text-align: center;
   padding-top: 3px;
 }
-
 .formulario__btn {
   height: 45px;
   line-height: 45px;
@@ -91,82 +76,62 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: .1s ease all;
+  transition: 0.1s ease all;
   margin-left: 70px;
 }
-
 .formulario__btn:hover {
   box-shadow: 3px 0px 30px rgb(163, 163, 163, 1);
 }
-
 .formulario__mensaje-exito {
   font-size: 14px;
   color: #119200;
   display: none;
   text-align: center;
 }
-
 .formulario__mensaje-exito-activo {
   display: block;
 }
-
-
-
 .formulario {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: 178px;
-
 }
-
-.flex 
-   {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      
-  }
-
-
+.flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
 main {
   margin-right: 125px;
 }
-
-.formulario__grupo-correcto 
-.formulario__validacion-estado {
-color: #1ed12d;
-opacity: 1;
-z-index: -1;
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+  z-index: -1;
 }
-
 .formulario__grupo-incorrecto .formulario__label {
   color: #bd2929;
   z-index: -1;
 }
-
 .formulario__grupo-incorrecto .formulario__validacion-estado {
   color: #bd2929;
   opacity: 1;
   z-index: -1;
 }
-
 .formulario__grupo-incorrecto .formulario__input {
   border: 3px solid #bd2929;
 }
-
 p {
   width: 100%;
 }
-
 #login {
   margin-left: 254px;
   padding-top: 74px;
 }
-
 .formulario__grupo {
   padding-top: 20px;
 }

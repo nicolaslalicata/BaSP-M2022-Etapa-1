@@ -106,7 +106,11 @@ function clickButton(e) {
       "Datos correctos " + "Email: " + mail2.value + " Password: " + pass3.value
     );
   } else if (!validateEmail) {
-    alert("Formato invaldo de email: example@mail.com " + ' Ingress: ' +  mail2.value);
+    alert(
+      "Formato invaldo de email: EXAMPLE@MAIL.COM " +
+        " Your Ingress: " +
+        mail2.value
+    );
   } else {
     alert("Contraseña incorrecta");
   }

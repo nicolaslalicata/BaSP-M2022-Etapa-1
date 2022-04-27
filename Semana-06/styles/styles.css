@@ -106,6 +106,10 @@ body {
   h1 {
     text-align: center;
   }
+  #butonSend  {
+    margin-left: 5.625em;
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 480px){
@@ -127,10 +131,13 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .filapro {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#butonSend  {
+  margin-left: 2em;
+  width: 60%;
 }
 }

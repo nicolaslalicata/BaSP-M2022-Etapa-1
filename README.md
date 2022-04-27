@@ -48,15 +48,22 @@ In my case, **I created 5 files** with a **.js extension** that contained the ex
   <li>04_if_else.js</li>
   <li>05_for.js</li>
   <li>06_functions.js
-
+</em>
   </ul>
+
+---
+## **Week-06**
+The problem this week was to create a login and a register form and validate their respective inputs with pure javascript.
+Then we change the positioning and add new files to our original project in order to organize and structure the code in a clearer way.
+In addition to that we create new CSS styles following our original layout for our **LOGIN** and **REGISTER** screens
+
 
 
 
 
 ### **GitPage:**
 ```
- https://nicolaslalicata.github.io/BaSP-M2022-Etapa-1/Semana-04/index.html
+ https://nicolaslalicata.github.io/BaSP-M2022-Etapa-1/Semana-06/views
  Author:
  Nicolás Lalicata 
  ```

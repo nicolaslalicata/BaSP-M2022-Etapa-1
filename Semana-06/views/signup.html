@@ -65,10 +65,8 @@
         </div>
       </div>
     </aside>
-
     <main>
       <form action="" class="formulario" id="formulario">
-        <!-- Grupo: Usuario-->
         <div class="flex">
           <div class="formulario__grupo" id="grupo__usuario">
             <label for="usuario" class="formulario__label">Name</label>
@@ -76,63 +74,49 @@
               <input type="text" class="formulario__input " name="usuario" id="usuario" placeholder="Name">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Solo letras y debe tener más de 3 letras.</p>
+            <p class="formulario__input-error">Only letters and more than 8 characters.</p>
           </div>
-
-          <!-- Grupo: Nombre-->
           <div class="formulario__grupo" id="grupo__nombre">
             <label for="nombre" class="formulario__label">Surname</label>
             <div class="formulario__grupo-input">
               <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Surname">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Solo letras y debe tener más de 3 letras.</p>
+            <p class="formulario__input-error">Only letters and more than 8 characters.</p>
           </div>
-
-          <!-- Grupo: Email-->
           <div class="formulario__grupo" id="grupo__nacimiento">
             <label for="nacimiento" class="formulario__label">Birthdate</label>
             <div class="formulario__grupo-input">
               <input type="text" class="formulario__input" name="nacimiento" id="nacimiento" placeholder="DD/MM/AAAA">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Con formato dd/mm/aaaa.
+            <p class="formulario__input-error">DD/MM/AAAA
             </p>
           </div>
-
-          <!-- Grupo: email-->
           <div class="formulario__grupo" id="grupo__email">
             <label for="email" class="formulario__label">E-mail</label>
             <div class="formulario__grupo-input">
               <input type="text" class="formulario__input" name="email" id="email" placeholder="mail@mail.com">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Debe tener un formato de email válido.</p>
+            <p class="formulario__input-error">Example@email.com.</p>
           </div>
-
-          <!-- Grupo: direccion-->
           <div class="formulario__grupo" id="grupo__direccion">
             <label for="direccion" class="formulario__label">Address</label>
             <div class="formulario__grupo-input">
               <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Street Addres">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Debe tener un formato de direccion válido.</p>
+            <p class="formulario__input-error">More than 5 characters, numbers and space.</p>
           </div>
-
-          <!-- Grupo: Localidad-->
-
           <div class="formulario__grupo" id="grupo__localidad">
             <label for="localidad" class="formulario__label">Location</label>
             <div class="formulario__grupo-input">
               <input type="text" class="formulario__input" name="localidad" id="localidad" placeholder="Location">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Más de 3 letras
-            </p>
+            <p class="formulario__input-error">Alphanumeric Text and more than 3 characters.</p>
           </div>
-
-          <!-- Grupo: CP-->
           <div class="formulario__grupo" id="grupo__codigo-postal">
             <label for="codigo-postal" class="formulario__label">Postal Code</label>
             <div class="formulario__grupo-input">
@@ -140,71 +124,51 @@
                 placeholder="Enter your zip code">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">debe tener entre 4 y 5 números.</p>
+            <p class="formulario__input-error">between 4 and 5 characters.</p>
           </div>
-
-
-
-
-          <!-- Grupo: DNI-->
           <div class="formulario__grupo" id="grupo__dni">
             <label for="dni" class="formulario__label">ID</label>
             <div class="formulario__grupo-input">
               <input type="text" class="formulario__input" name="dni" id="dni" placeholder="2435699881">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Solo número y debe tener más de 7 números.</p>
+            <p class="formulario__input-error">Only numbers and more than 10 numbers.</p>
           </div>
-
-          <!-- Grupo: Telefono-->
           <div class="formulario__grupo" id="grupo__telefono">
             <label for="telefono" class="formulario__label">Phone</label>
             <div class="formulario__grupo-input">
               <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="(555) 6522145">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Solo número y debe tener 10 números</p>
+            <p class="formulario__input-error">Only numbers and 10 numbers.</p>
           </div>
-          <!-- Grupo contraseña-->
           <div class="formulario__grupo" id="grupo__password">
             <label for="password" class="formulario__label">Password</label>
             <div class="formulario__grupo-input">
               <input type="password" class="formulario__input" name="password" id="password">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Letras numeros y +8 caracteres
+            <p class="formulario__input-error">Letters+Numbers+characters.
             </p>
           </div>
-
-          <!-- Grupo: Contraseña2-->
-
           <div class="formulario__grupo" id="grupo__password2">
             <label for="password2" class="formulario__label">Repeat Password</label>
             <div class="formulario__grupo-input">
               <input type="password" class="formulario__input" name="password2" id="password2">
               <i class="formulario__validacion-estado uil uil-times-circle"></i>
             </div>
-            <p class="formulario__input-error">Las contraseñas no coinciden</p>
+            <p class="formulario__input-error">The passwords do not match.</p>
           </div>
         </div>
-        <!-- validacion y terminos-->
         <div class="formulario__grupo" id="grupo__terminos">
           <label class="formulario__label">
             <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
             I accept the terms and conditions
-
           </label>
         </div>
-        <div class="formulario__mensaje" id="formulario__mensaje">
-          <p><i class="uil uil-exclamation-octagon"></i><b>Error: </b>por favor rellenar correctamente el formulario</p>
-
-        </div>
-
         <div class="formulario__grupo" class="formulario__grupo-btn-enviar">
           <button type="submit" class="formulario__btn" id="butonSend"> Send</button>
-          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente</p>
         </div>
-
       </form>
     </main>
   </div>
@@ -232,5 +196,4 @@
 </body>
 </body>
 <script src="../javascript/sign-up.js"></script>
-
 </html>
