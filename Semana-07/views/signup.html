@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trackgenix is a new app for human resources" />
+  <meta name="keywords" content="Human Resources, Bussines" />
+  <meta name="author" content="Nicolás Lalicata" />
+  <link rel="stylesheet" href="../styles/reset.css" media="screen" />
+  <link rel="stylesheet" href="../styles/header.css" media="screen" />
+  <link rel="stylesheet" href="../styles/landing.css" media="screen" />
+  <link rel="stylesheet" href="../styles/footer.css" media="screen" />
+  <link rel="stylesheet" href="../styles/styles.css" media="screen" />
+  <link rel="stylesheet" href="../styles/aside.css" media="screen" />
+  <link rel="stylesheet" href="../styles/sign-up.css" media="screen" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <title>Trackgenix</title>
+</head>
+
+<body>
+  <header>
+    <img class="test4" src="../assets/Union.png" alt="asdasd" />
+    <span class="radium"> Radium</span>
+    <span class="rocket"> Rocket</span>
+  </header>
+  <div class="container-principal">
+    <aside>
+      <div class="menu">
+        <span class="stylesmenu"> Menu </span>
+        <div class="border1"></div>
+        <div class="menu1">
+          <ul class="contacto">
+            <li class="bordermenu"><a href="./index.html">Home</a></li>
+            <li class="bordermenu"><a href="./signup.html">Sign Up</a></li>
+            <li class="bordermenu"><a href="./login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <span class="stylesmenu"> Contact Us </span>
+          <div class="border"></div>
+          <p class="aside-style">
+            We provide 24-hour support, you can contact us through the
+            different official channels that we handle.
+          </p>
+          <ul class="contacto">
+            <div class="contacts">
+              <li><a href="#">radiumrocket@gmail.com</a></li>
+              <img src="../assets/mail.png" alt="mail" class="e-mail" />
+            </div>
+            <div class="contacts">
+              <li><a href="#">+1 555-000-555</a></li>
+              <img src="../assets/mail.png" alt="phone" class="mail" />
+            </div>
+            <div class="contacts">
+              <li>
+                <a href="#">1234 Somewhere Road #8254 Nashville, TN 00000-0000
+                </a>
+              </li>
+              <img src="../assets/direction.png" alt="home" class="direction" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <form action="" class="form" id="form">
+        <div class="flex">
+          <div class="formGroup" id="groupUser">
+            <label for="user" class="formLabel">Name</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput " name="user" id="user" placeholder="Name">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">Name must have only letters</p>
+          </div>
+          <div class="formGroup" id="groupName">
+            <label for="lastName" class="formLabel">Surname</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput" name="lastName" id="lastName" placeholder="Surname">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">LastName must have only letters</p>
+          </div>
+          <div class="formGroup" id="groupBirthday">
+            <label for="birthdate" class="formLabel">Birthdate</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput" name="birthdate" id="birthdate" placeholder="MM/DD/YYYY">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">MM/DD/YYYY
+            </p>
+          </div>
+          <div class="formGroup" id="grupo__email">
+            <label for="email" class="formLabel">E-mail</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput" name="email" id="email" placeholder="mail@mail.com">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">Example@email.com.</p>
+          </div>
+          <div class="formGroup" id="groupAddress">
+            <label for="address" class="formLabel">Address</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput" name="address" id="address" placeholder="Street Addres">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">Address must have more than 3 letters</p>
+          </div>
+          <div class="formGroup" id="groupCity">
+            <label for="city" class="formLabel">City</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput" name="city" id="city" placeholder="Location">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">City must have more than 3 letters</p>
+          </div>
+          <div class="formGroup" id="groupZip">
+            <label for="zip" class="formLabel">Postal Code</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput" name="zip" id="zip"
+                placeholder="Enter your zip code">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">Zip must have between 4 and 5 numbers</p>
+          </div>
+          <div class="formGroup" id="groupId">
+            <label for="id" class="formLabel">ID</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput" name="id" id="id" placeholder="2435699881">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">DNI must have between 7 and 8 numbers</p>
+          </div>
+          <div class="formGroup" id="groupPhone">
+            <label for="phone" class="formLabel">Phone</label>
+            <div class="formGroupInput">
+              <input type="text" class="formInput" name="phone" id="phone" placeholder="(555) 6522145">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">Phone must have 10 numbers</p>
+          </div>
+          <div class="formGroup" id="groupPassword">
+            <label for="password" class="formLabel">Password</label>
+            <div class="formGroupInput">
+              <input type="password" class="formInput" name="password" id="password">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">Letters+Numbers+characters.
+            </p>
+          </div>
+          <div class="formGroup" id="groupPassword2">
+            <label for="password2" class="formLabel">Repeat Password</label>
+            <div class="formGroupInput">
+              <input type="password" class="formInput" name="password2" id="password2">
+              <i class="formUserState uil uil-times-circle"></i>
+            </div>
+            <p class="formInputError">The passwords do not match.</p>
+          </div>
+        </div>
+        <div class="formGroup" id="groupConditions">
+          <label class="formLabel">
+            <input class="formCheckbox" type="checkbox" name="conditions" id="conditions">
+            I accept the terms and conditions
+          </label>
+        </div>
+        <div class="formGroup" class="formGroupBtnSend">
+          <button type="submit" class="formBtn" id="butonSend"> Send</button>
+        </div>
+      </form>
+    </main>
+  </div>
+  </div>
+  <footer>
+    <div>
+      <ul class="iconfooter">
+        <li class="redes">
+          <a href="#"><img src="../assets/facebook.png" alt="logo-fb" /></a>
+        </li>
+        <li class="redes">
+          <a href="#"><img src="../assets/linkedin.png" alt="logo-tw" /></a>
+        </li>
+        <li class="redes">
+          <a href="#"><img src="../assets/twitter.png" alt="logo-in" /></a>
+        </li>
+        <li class="redes">
+          <a href="#"><img src="../assets/whatsapp.png" alt="logo-wsp" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="track"><em>Trackgenix</em></div>
+  </footer>
+
+</body>
+</body>
+<script src="../javascript/sign-up.js"></script>
+</html>
