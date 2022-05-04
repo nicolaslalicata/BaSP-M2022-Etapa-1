@@ -94,23 +94,25 @@ pass3.addEventListener("blur", function (e) {
 });
 btn.addEventListener("click", clickButton);
 function clickButton(e) {
-  var url = "https://basp-m2022-api-rest-server.herokuapp.com/login";
-  url = url + "?email=" + mail2.value + "&password=" + pass3.value;
   e.preventDefault();
-  if (!validateEmail || !validatePassword) {
-    fetch(url)
-    .then(function (response) {
-      return response.json()
-    })
-    .then(function (jsonResponse) {
-     alert(jsonResponse.errors[0].msg);
-    })
-  } else {
-    fetch(url)
-    .then(function (response) {
-      return response.json()
-    })
-    .then(function (jsonResponse) {
-     alert(jsonResponse.msg);
-    })
-  }}
+    var url = "https://basp-m2022-api-rest-server.herokuapp.com/login";
+    url = url + "?email=" + mail2.value + "&password=" + pass3.value;
+    if (!validateEmail && !validatePassword) {
+      alert ('Error en uno de los parametros: ' + mail2.value + ' or ' + pass3.value)
+    } else if (!validateEmail) {
+        alert ('Email incorrecto: '  + mail2.value )
+    } else if (!validatePassword) {
+        alert ('Contraseña incorrecta: ' + pass3.value )
+    } else if (validateEmail && validatePassword) {
+      fetch (url)
+      .then (function (response) {
+        return response.json()
+      })
+      .then(function (json) {
+        alert(json.msg)
+      })
+      .catch (function (fail) {
+        alert(fail.errors[0].msg);
+      })
+    }
+}

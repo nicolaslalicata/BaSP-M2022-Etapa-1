@@ -12,17 +12,17 @@ var docu = document.getElementById("id");
 var pass = document.getElementById("password");
 var pass2 = document.getElementById("password2");
 var btn2 = document.getElementById("butonSend");
-var validateUser = false;
-var validateNames = false;
-var validateDate = false;
-var validateMail = false;
-var validateAddres = false;
-var validateLocalty = false;
-var validateCps = false;
-var validatePhones = false;
-var validateDocus = false;
-var validatePass = false;
-var validatePass2 = false;
+var validateUser = true;
+var validateNames = true;
+var validateDate = true;
+var validateMail = true;
+var validateAddres = true;
+var validateLocalty = true;
+var validateCps = true;
+var validatePhones = true;
+var validateDocus = true;
+var validatePass = true;
+var validatePass2 = true;
 user.addEventListener("focus", function (e) {
   document
     .getElementById("groupUser")
@@ -698,28 +698,49 @@ pass2.addEventListener("blur", function (e) {
 });
 btn2.addEventListener("click", clickButton);
 function clickButton(e) {
-  myLocalStorage();
+  e.preventDefault();
   var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
   url = url + "?name=" + user.value + "&lastName=" + names.value + "&dob=" + date.value + "&email=" + mail.value + "&address=" + addres.value + "&city=" + localty.value + "&zip=" + cp.value + "&phone=" + phone.value + "&dni=" + docu.value + "&password=" + pass.value;
-  e.preventDefault();
-  if (!validateUser || !validateNames || !validateDate || !validateMail || !validateAddres || !validateLocalty || !validateCps || !validatePhones || !validateDocus || !validatePass ) {
-      fetch(url)
-      .then(function (response) {
-        return response.json()
-      })
-      .then(function (jsonResponse) {
-        alert(jsonResponse.errors[0].msg);
-      })
-    } else {
-      fetch(url)
-      .then(function (response) {
-        return response.json()
-      })
-      .then(function (jsonResponse) {
-        alert(jsonResponse.msg + '\nuser: ' + user.value + '\nlastname: ' + names.value + '\ndate: ' + date.value + '\nmail: ' + mail.value + '\naddress: ' + addres.value + '\nlocalty: ' + localty.value + '\ncp: ' + cp.value + '\nphone: ' + phone.value + '\ndni: ' + docu.value + '\nPassword: ' +  pass.value);
-      })
-    }};
-
+  if (!validateUser || user.value == 0) {
+    alert('error in Name: '+ user.value )
+  } else if (!validateNames || names.value == 0) {
+    alert('error in LastName: ' + names.value )
+  }else if (!validateDate || date.value == 0){
+    alert('error in Datebirth: ' + date.value)
+  }else if (!validateMail || mail.value == 0){
+    alert('error in E-mail: ' + mail.value)
+  }else if (!validateAddres || addres.value == 0){
+    alert('error in Address: ' + addres.value)
+  }else if (!validateLocalty || localty.value == 0){
+    alert('error in City: ' + localty.value)
+  }else if (!validatePhones || phone.value == 0){
+    alert('error in Phone: ' + phone.value)
+  }else if (!validateDocus || docu.value == 0){
+    alert('error in ID: ' + docu.value) 
+  }else if (!validateCps || cp.value == 0){
+    alert('error in ZIP: ' + cp.value)
+  } else if (!validatePass || pass.value == 0){
+    alert('error in Password: ' + pass.value)
+  }else if (!validatePass2 || pass2.value == 0){
+    alert('error in Confirm Password: ' + pass2.value)
+  } 
+  else {
+    fetch(url)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (responseJson) {
+          myLocalStorage();
+             alert (responseJson.msg + "\nFirst name: " + user.value + "\nLast name: " + names.value +
+            "\nDNI: " + docu.value + "\nBirthday: " + date.value + "\nCellphone: " + phone.value +
+            "\nAddress: " + addres.value + "\nLocation: " + localty.value + "\nPostal code: " +
+          	cp.value + "\nEmail: " + mail.value + "\nPassword: " + pass.value);
+        })
+        .catch(function (fails) {
+             alert(fails.errors[0].msg);
+        });
+}
+  };
   function myLocalStorage() {
     localStorage.setItem('name', user.value);
     localStorage.setItem('lastName', names.value);

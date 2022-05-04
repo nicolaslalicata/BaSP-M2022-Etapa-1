@@ -57,13 +57,15 @@ The problem this week was to create a login and a register form and validate the
 Then we change the positioning and add new files to our original project in order to organize and structure the code in a clearer way.
 In addition to that we create new CSS styles following our original layout for our **LOGIN** and **REGISTER** screens
 
-
-
+---
+## **Week-07**
+This week's problem was validate our inputs **from the API** provided by Radium Rocket.
+We were provided with a username and password to login and a series of validations for the signup part.
 
 
 ### **GitPage:**
 ```
- https://nicolaslalicata.github.io/BaSP-M2022-Etapa-1/Semana-06/views
+ https://nicolaslalicata.github.io/BaSP-M2022-Etapa-1/Semana-07/views
  Author:
  Nicolás Lalicata 
  ```
